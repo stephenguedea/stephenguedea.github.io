@@ -2,10 +2,119 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Site</title>
-</head>
-<body>
-<h1>hello</h1>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styling.css">
 
+    <title>Meet Stephen</title>
+</head>
+<body class="p-3 bg-light text-dark">
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img src="./img/developer_logo.png" class="logo" width="70" height="70" align="center"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="name" id="name">
+    <img src="./img/computer_keyboard.png" class="img-fluid rounded mx-auto d-block" width="100" height="100" alt="Responsive image">
+    <h1 class="text-center display-1">Stephen Ray Guedea</h1>
+    <p class="text-center display-4">Software Developer</p>
+</div>
+
+<div id="about"></div>
+<div class="about p-3 text-white rounded">
+    <h1 class="text-center display-5 bg-light text-dark">About Me</h1>
+    <br>
+    <p class="font-weight-light">Hometown: San Antonio, TX</p>
+    <p class="font-weight-light">Education: Codeup, St. Mary's University</p>
+    <p class="font-weight-light">Major: Music</p>
+    <p class="font-weight-light">Skills: HTML, CSS, Javascript, jQuery, Java, MySQL</p>
+    <p class="font-weight-light">Interest: Coding, Web Design, DJ, Karaoke, Batman</p>
+    <p><img src="./img/headshot2_copy.jpg" class="headshot float-right mx-auto d-block"></p>
+    <br>
+    <br>
+    <br>
+</div>
+
+
+<div class="resume p-3 text-white rounded w-100" id="resume">
+    <h1 class="text-center display-5 bg-light text-dark">Resume</h1>
+    <br>
+
+    <iframe src="./doc/ResumeTblock.pdf" width="1000px" height="1000px">
+    </iframe>
+    <!--<embed type="application/pdf" src="./documents/tBlockResume_copy.pdf" width="1000px" height="1000px" class="resumeDoc" />-->
+    <!--<div class="row">-->
+
+    <!--<div class="education">-->
+    <!--<h3 class="font-weight-bold">Education</h3>-->
+    <!--<div class="col-4">-->
+    <!--<p class="font-weight-bold">Codeup</p>-->
+    <!--<p class="font-weight-light">Sept 2018 - Feb 2018</p>-->
+    <!--<p class="font-weight-light">Codeup is a fully-immersive, project-based, and intensive 18 week-->
+    <!--full stack Java career accelerator that provides students with 600+ hours of expert-->
+    <!--instruction in software development.</p>-->
+    <!--<p class="font-weight-bold">St. Mary's University</p>-->
+    <!--<p class="font-weight-light">Aug 2011 - May 2014</p>-->
+    <!--<p class="font-weight-light">Bachelor of Arts Degree | Major: Music </p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="experience">-->
+    <!--<h3 class="font-weight-bold">Experience</h3>-->
+    <!--<div class="col-8">-->
+    <!--<p class="font-weight-bold">Instructional Assistant</p>-->
+    <!--<p class="font-weight-light">Northside ISD</p>-->
+    <!--<p class="font-weight-light">Aug 2015 - Aug 2017</p>-->
+    <!--<p class="font-weight-bold">Sales Associate</p>-->
+    <!--<p class="font-weight-light">Banana Republic</p>-->
+    <!--<p class="font-weight-light">Jun 2013 - Jan 2016</p>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+</div>
+
+<div class="project p-3 text-white rounded float-center" id="project">
+    <h1 class="text-center display-5 bg-light text-dark">Projects</h1>
+    <br>
+    <p class="font-weight-light text-dark">Hometown: San Antonio, TX</p>
+    <p class="font-weight-light text-dark">Education: Codeup, St. Mary's University</p>
+    <p class="font-weight-light text-dark">Major: Music</p>
+    <p class="font-weight-light text-dark">Skills: HTML, CSS, Javascript, jQuery, Java, MySQL</p>
+    <p class="font-weight-light text-dark">Interest: Coding, Web Design, DJ, Karaoke, Batman</p>
+</div>
+
+<div class="contact p-3 text-white rounded" id="contact">
+    <h1 class="text-center display-5 bg-light text-dark">Contact Me</h1>
+    <br>
+    <p class="font-weight-light text-right">210.323.5841</p>
+    <p class="font-weight-light text-right">guedea.stephen@gmail.com</p>
+    <p class="font-weight-light text-right">linkedin.com/in/stephen-guedea</p>
+    <p class="font-weight-light text-right">github.com/stephenguedea</p>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

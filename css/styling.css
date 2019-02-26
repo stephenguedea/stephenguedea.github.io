@@ -1,0 +1,53 @@
+html {
+    scroll-behavior: smooth;
+
+}
+.logo {
+
+}
+
+.navbar {
+    background-color: #759EB8;
+}
+
+
+
+.name {
+    padding: 15em 0;
+}
+
+.about {
+    /*margin-right: 50%;*/
+    background-color: #7392B7;
+}
+.headshot {
+    border-radius: 50%;
+    width: 330px;
+    margin: -217px;
+    padding: 0px;
+
+    /*position: absolute;*/
+    /*left: 0px;*/
+    /*top: 0px;*/
+    clear: right;
+}
+
+.resume {
+    /*margin-left: 50%;*/
+    background-color: #B3C5D7;
+}
+.resumeDoc {
+    position: center;
+    margin-left: 180px;
+}
+
+
+.project {
+    /*margin-right: 50%;*/
+    background-color: #D8E1E9;
+}
+
+.contact {
+
+    background-color: #759EB8;
+}
