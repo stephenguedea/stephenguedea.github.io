@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>DJ Stevie G | Mobile DJ</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="./img/DJ_stevie_logo.jpg">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,6 +13,8 @@
         height: 100%;
         color: #777;
         line-height: 1.8;
+        scroll-behavior: smooth;
+
     }
     a:link {
         text-decoration: none;
@@ -84,14 +87,22 @@
         </a>
         <a href="#home" class="w3-bar-item w3-button">HOME</a>
         <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> MIXES</a>
         <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+        <div class="w3-xlarge w3-right">
+            <a href="https://www.facebook.com/DJ-STEViE-G-satx-169237906485599/" target="_blank" class="fa fa-facebook-official w3-hover-opacity"></a>
+            <a href="https://www.instagram.com/djsteviegsatx/" target="_blank" class="fa fa-instagram w3-hover-opacity"></a>
+            <a href="https://www.snapchat.com/add/djsteviegsatx" class="fa fa-snapchat w3-hover-opacity"></a>
+            <a href="https://twitter.com/DJSTEViEG_satx" target="_blank" class="fa fa-twitter w3-hover-opacity"></a>
+            <a href="https://www.mixcloud.com/djsteviegsatx/" target="_blank" class="fa fa-mixcloud w3-hover-opacity"></a>
+        </div>
     </div>
+
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
         <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">MIXES</a>
         <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
         <a href="#" class="w3-bar-item w3-button">SEARCH</a>
     </div>
@@ -101,6 +112,7 @@
 <div class="bgimg-1 w3-display-container" id="home" style="margin-top: 45px">
     <div class="w3-display-middle w3-padding-64" style="white-space:nowrap;">
     </div>
+
 </div>
 
 <!-- Container (About Section) -->
@@ -110,8 +122,8 @@
     <p class="w3-center"><em>- P.T. Barnum</em></p>
 
 
-    <p class="w3-hide-medium w3-hide-large">Hey guys! My name is Stephen Ray Guedea, aka DJ Stevie G, I was born and raised in San Antonio, TX, home of the San Antonio Spurs, Go Spurs Go! I've been a DJ since 1999, started helping my dad set up at events, then just started messing around with my dad's records and CDs in the garage and became fascinated with you can do with turntables and a mixer. Eventaully I started playing behind the tables for family functions at my grandma's backyard. One thing lead to another and next thing you know, a hobby become a career!
-        I've played and hosted numerous events, both private and public, and around the Southern Texan region, including San Antonio, Corpus Christi, Eagle Pass, Uvalde, Boerne, Fredericksberg, Hunt, Pearsall, just to name a few. Performed at public events such as Fiesta's Texas Cavaliers River Parade, Pride Center NYE Celebration, Pride Center Easter Picnic, Final Four Pre-game Party, again just to name a few. But no matter how big or small the crowd is, I'm determined to make sure that everyone will have a great time. It's your party, I'm just the DJ!</p>
+    <p class="w3-hide-small w3-hide-medium w3-hide-large">Hey guys! My name is Stephen Ray Guedea, aka DJ Stevie G, I was born and raised in San Antonio, TX, home of the San Antonio Spurs, Go Spurs Go! I've been a DJ since 1999, started helping my dad set up at events, then just started messing around with my dad's records and CDs in the garage and became fascinated with you can do with turntables and a mixer. Eventaully I started playing behind the tables for family functions at my grandma's backyard. One thing lead to another and next thing you know, a hobby become a career!
+        I've played and hosted numerous events, both private and public, and around the Southern Texan region, including San Antonio, Corpus Christi, Eagle Pass, Uvalde, Boerne, Fredericksberg, Hunt, Pearsall, just to name a few. Performed at public events such as Fiesta's Texas Cavaliers River Parade, Pride Center NYE Celebration, Pride Center Easter Picnic, Final Four Pre-game Party, again just to name a few. But no matter how big or small the crowd is, I'm determined to make sure that everyone will have a great time. It's your party, I'm just the DJ!
     </p>
     <div class="w3-row">
         <div class="w3-col m6 w3-center w3-padding-large">
@@ -120,10 +132,9 @@
         </div>
 
         <!-- Hide this text on small devices -->
-        <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <div class="w3-col m6 w3-padding-large">
             <p>Hey guys! My name is Stephen Ray Guedea, aka DJ Stevie G, I was born and raised in San Antonio, TX, home of the San Antonio Spurs, Go Spurs Go! I've been a DJ since 1999, started helping my dad set up at events, then just started messing around with my dad's records and CDs in the garage and became fascinated with you can do with turntables and a mixer. Eventaully I started playing behind the tables for family functions at my grandma's backyard. One thing lead to another and next thing you know, a hobby become a career!
                 I've played and hosted numerous events, both private and public, and around the Southern Texan region, including San Antonio, Corpus Christi, Eagle Pass, Uvalde, Boerne, Fredericksberg, Hunt, Pearsall, just to name a few. Performed at public events such as Fiesta's Texas Cavaliers River Parade, Pride Center NYE Celebration, Pride Center Easter Picnic, Final Four Pre-game Party, again just to name a few. But no matter how big or small the crowd is, I'm determined to make sure that everyone will have a great time. It's your party, I'm just the DJ!</p>
-            </p>
         </div>
     </div>
 </div>
@@ -137,31 +148,68 @@
 
 
 
-<!--<div class="w3-row w3-center w3-dark-grey w3-padding-16">-->
-    <!--<div class="w3-quarter w3-section">-->
-        <!--<i class="fal fa-ring"></i><br>-->
-        <!--Weddings-->
-    <!--</div>-->
-    <!--<div class="w3-quarter w3-section">-->
-        <!--<i class="fal fa-ring"></i><br>-->
-        <!--Quinceanera-->
-    <!--</div>-->
-    <!--<div class="w3-quarter w3-section">-->
-        <!--<i class="fal fa-ring"></i><br>-->
-        <!--Graduations-->
-    <!--</div>-->
-    <!--<div class="w3-quarter w3-section">-->
-        <!--<i class="fal fa-ring"></i><br>-->
-        <!--Social Events-->
-    <!--</div>-->
-<!--</div>-->
+<div class="w3-row w3-center w3-dark-gray w3-padding-16">
+
+    <div class="w3-section">
+        <i class="fal fa-ring"></i><br>
+        Music and Light for All Occasions
+    </div>
+</div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<!--<div class="bgimg-2 w3-display-container w3-opacity-min">-->
+<div class="w3-display-container  w3-hide-medium w3-hide-large">
+
+    <div class="w3-row">
+
+        <div class="w3-col l4 w3-center" style="max-width:500px">
+            <img class="mySlides w3-animate-fading" src="img/20190323_214751.jpg" style="width:100%; height: 300px">
+            <img class="mySlides w3-animate-fading" src="img/20180511_205156.jpg" style="width:100%; height: 300px">
+            <img class="mySlides w3-animate-fading" src="img/WesternSkyWedding.png" style="width:100%; height: 300px">
+            <img class="mySlides w3-animate-fading" src="img/20190316_203440.jpg" style="width:100%; height: 300px">
+            <img class="mySlides w3-animate-fading" src="img/Screen%20Shot%202019-03-26%20at%2010.47.56%20AM.png" style="width:100%; height: 300px">
+            <img class="mySlides w3-animate-fading" src="img/Screen%20Shot%202019-03-26%20at%2010.51.43%20AM.png" style="width:100%; height: 300px">
+            <img class="mySlides w3-animate-fading" src="img/uplightBlue.jpg" style="width:100%; height: 300px">
+            <img class="mySlides w3-animate-fading" src="img/Screen%20Shot%202019-03-26%20at%2010.51.43%20AM.png" style="width:100%; height: 300px">
+
+        </div>
+    </div>
+</div>
+<div class="w3-display-container">
     <!--<div class="w3-display-middle">-->
         <!--<span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>-->
     <!--</div>-->
-<!--</div>-->
+    <div class="w3-row w3-hide-small">
+
+        <div class="w3-col l4 w3-left" style="max-width:500px">
+            <img class="mySlidesLeft w3-animate-fading" src="img/20190323_214751.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesLeft w3-animate-fading" src="img/20180511_205156.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesLeft w3-animate-fading" src="img/WesternSkyWedding.png" style="width:100%; height: 300px">
+            <img class="mySlidesLeft w3-animate-fading" src="img/20190316_203440.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesLeft w3-animate-fading" src="img/Screen%20Shot%202019-03-26%20at%2010.47.56%20AM.png" style="width:100%; height: 300px">
+            <img class="mySlidesLeft w3-animate-fading" src="img/Screen%20Shot%202019-03-26%20at%2010.51.43%20AM.png" style="width:100%; height: 300px">
+            <img class="mySlidesLeft w3-animate-fading" src="img/uplightBlue.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesLeft w3-animate-fading" src="img/Screen%20Shot%202019-03-26%20at%2010.51.43%20AM.png" style="width:100%; height: 300px">
+        </div>
+        <div class="w3-col l4 w3-center" style="max-width:500px">
+            <img class="mySlidesCenter w3-animate-fading" src="img/20190316_203440.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesCenter w3-animate-fading" src="img/20190323_214734.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesCenter w3-animate-fading" src="img/20190323_214740.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesCenter w3-animate-fading" src="img/IMG_20190323_175547_073.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesCenter w3-animate-fading" src="img/uplightGreen.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesCenter w3-animate-fading" src="img/RanchoPink.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesCenter w3-animate-fading" src="img/RanchoViolet.jpg" style="width:100%; height: 300px">
+        </div>
+        <div class="w3-col l4 w3-right" style="max-width:500px">
+            <img class="mySlidesRight w3-animate-fading" src="img/holmesProm18_red.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesRight w3-animate-fading" src="img/RanchoWedding.png" style="width:100%; height: 300px">
+            <img class="mySlidesRight w3-animate-fading" src="img/holmesProm18.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesRight w3-animate-fading" src="img/20180511_205156.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesRight w3-animate-fading" src="img/RanchoHotPink.jpg" style="width:100%; height: 300px">
+            <img class="mySlidesRight w3-animate-fading" src="img/Screen%20Shot%202019-03-26%20at%2010.55.02%20AM.png" style="width:100%; height: 300px">
+            <img class="mySlidesRight w3-animate-fading" src="img/Screen%20Shot%202019-03-26%20at%2010.56.28%20AM.png" style="width:100%; height: 300px">
+        </div>
+    </div>
+</div>
 
 <!-- Container (Portfolio Section) -->
 <div class="bgimg-2 w3-display-container w3-opacity-min" id="portfolio">
@@ -238,7 +286,7 @@
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
     <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
     <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
+        <!--<img id="img01" class="w3-image">-->
         <p id="caption" class="w3-opacity w3-large"></p>
     </div>
 </div>
@@ -252,12 +300,13 @@
 
 <!-- Container (Contact Section) -->
 <div class="w3-content w3-container w3-padding-64">
-    <h3 class="w3-center">WHERE I WORK</h3>
+    <h3 class="w3-center">WHERE I PLAY</h3>
     <p class="w3-center"><em>I'd love to hear from you!</em></p>
 
     <div class="w3-row w3-padding-32 w3-section">
         <div class="w3-col m6 w3-container">
-            <img src="img/spurs-mural.jpg" class="w3-image w3-round" style="width:100%">
+            <img src="img/barLouie.jpg" class="w3-image w3-round" style="width:100%">
+            <p class="w3-center">Subject to Change</p>
         </div>
         <div class="w3-col m6 w3-panel">
             <div class="w3-large w3-margin-bottom">
@@ -299,12 +348,12 @@
 
 <script>
     // Modal Image Gallery
-    function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-    }
+    // function onClick(element) {
+    //     document.getElementById("img01").src = element.src;
+    //     document.getElementById("modal01").style.display = "block";
+    //     var captionText = document.getElementById("caption");
+    //     captionText.innerHTML = element.alt;
+    // }
 
     // Change style of navbar on scroll
     window.onscroll = function() {myFunction()};
@@ -326,18 +375,67 @@
             x.className = x.className.replace(" w3-show", "");
         }
     }
-    var video = document.getElementById("myVideo");
-    var btn = document.getElementById("myBtn");
 
-    function myVideoFunction() {
-        if (video.paused) {
-            video.play();
-            btn.innerHTML = "Pause";
-        } else {
-            video.pause();
-            btn.innerHTML = "Play";
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
         }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 5000);
     }
+
+    var myCenterIndex = 0;
+    carouselCenter();
+
+    function carouselCenter() {
+        var i;
+        var x = document.getElementsByClassName("mySlidesCenter");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myCenterIndex++;
+        if (myCenterIndex > x.length) {myCenterIndex = 1}
+        x[myCenterIndex-1].style.display = "block";
+        setTimeout(carouselCenter, 9000);
+    }
+
+    var myLeftIndex = 0;
+    carouselLeft();
+
+    function carouselLeft() {
+        var i;
+        var x = document.getElementsByClassName("mySlidesLeft");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myLeftIndex++;
+        if (myLeftIndex > x.length) {myLeftIndex = 1}
+        x[myLeftIndex-1].style.display = "block";
+        setTimeout(carouselLeft, 8000);
+    }
+
+    var myRightIndex = 0;
+    carouselRight();
+
+    function carouselRight() {
+        var i;
+        var x = document.getElementsByClassName("mySlidesRight");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myRightIndex++;
+        if (myRightIndex > x.length) {myRightIndex = 1}
+        x[myRightIndex-1].style.display = "block";
+        setTimeout(carouselRight, 7000);
+    }
+
 </script>
 
 </body>
