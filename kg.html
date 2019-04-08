@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Weight Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+          crossorigin="anonymous">
     <style>
         body {
             margin-top: 70px;
             background-color: #333;
             color: white;
         }
-
     </style>
-</head>
-<body>
 
+    <title>Weight Converter</title>
+</head>
+
+<body>
 <div class="container">
+    <!-- Pushes everything into the middle-->
     <div class="row">
+        <!-- Use grid system-->
         <div class="col-md-6 offset-md-3">
             <h1 class="display-4 text-center mb-3">Weight Converter</h1>
             <form>
                 <div class="form-group form-inline justify-content-center">
-                    <input id="lbsInput" type="number" class="form-control form-control-lg" placeholder="Enter Pounds...">
+                    <input id="kgInput" type="number" class="form-control form-control-lg" placeholder="Enter Kilograms...">
                     <button class="btn btn-info dropdown-toggle form-control form-control-lg" type="number" id="dropdownMenuButton"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Choose Type
@@ -47,8 +51,8 @@
 
                 <div class="card bg-success mb-2">
                     <div class="card-block">
-                        <h4>Kilograms:</h4>
-                        <div id="kgOutput"></div>
+                        <h4>Pounds:</h4>
+                        <div id="lbsOutput"></div>
                     </div>
                 </div>
 
@@ -64,12 +68,20 @@
     </div>
 </div>
 
-
-
-<script src="js/weight-converter.js"></script>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script>
+    document.getElementById('output').style.visibility = 'hidden';
+    document.getElementById("kgInput").addEventListener('input', function (e) {
+        document.getElementById('output').style.visibility = 'visible';
+        let kg = e.target.value;
+        document.getElementById('gramsOutput').innerHTML = (kg * 1000).toFixed(2);
+        document.getElementById('lbsOutput').innerHTML = (kg * 2.20462).toFixed(4);
+        document.getElementById('ozOutput').innerHTML = (kg * 35.274).toFixed(2);
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 </body>
-</html>
